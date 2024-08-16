@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #202020;
+}
+
+/* hamburger menu hidden by default */
+.container {
+    display: none; 
+    font-size: 2em;
+    cursor: pointer;
+    color: #fff;
+}
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+/* primary nav CSS */  
+
+nav .logo img {
+    max-height: 50px;
+    height: auto;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: #44CECC;
+}
+
+/* hero section CSS */  
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url('../images/jenny-hero2.jpg');
+    background-size: cover;
+    background-position: center right;
+    height: 500px;
+    max-width: auto;
+    color: #fff;
+    padding: 0 80px;
+}
+
+.hero .content {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-family: 'Linden Hill', serif;
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: rgb(212, 212, 212);
+}
+
+.hero h2 {
+    color: #44CECC;
+    font-weight: 80;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: rgb(212, 212, 212);
+    line-height: 140%;
+
+}
+
+.hero button {
+    padding: 10px 20px;
+    border: 2px solid #62466B;
+    color: rgb(212, 212, 212);
+    background-color: #0D0D0D;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.hero button:hover {
+    background-color: #62466B;
+    color:white
+}
+
+.hero button:active {
+    background-color: #62466B;
+    transform: scale(0.95);
+}
+
+  /* Skills Flex Box CSS */  
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.flexItem {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.flexItem img.itemImage {
+    width: 90px; 
+    height: auto;
+    margin-bottom: 0px; 
+}
+
+.flexItem h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.flexItem p {
+    font-size: .9em;
+    color: #666;
+    line-height: 130%;
+}
+
+/* Work Grid CSS */
+
+.subHeading {
+    text-align: center;
+    margin: 50px ;
+}
+
+#workGrid {
+    margin: 0px 5%;
+    gap: 20px;
+    padding: 50px 20px;
+    display: grid;
+    grid-template-rows: 500px 500px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "wheelwise weather"
+    "beasties travel";
+
+}
+
+#wheelwise {
+    grid-area: wheelwise;
+    background-image: url("../images/wheelwise.jpg");
+}
+
+#weather {
+    grid-area: weather;
+    background-image: url("../images/weather-laptop-mobile.jpg");
+}
+
+#beasties {
+    grid-area: beasties;
+    background-image: url("../images/beasties-mobile.jpg");
+}
+
+#travel {
+    grid-area: travel;
+    background-image: url("../images/travel-app.jpg");
+}
+
+.workGridArea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+  }
+
+  .heading {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 0;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+  }
+
+
+  /* Footer CSS */  
+  .footer {
+    text-align: center;
+    padding: 20px 0;
+}
+.footerNav {
+    background-color: #202020;
+    padding: 20px 0;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer ul li {
+    margin: 0 10px;
+}
+
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #44CECC;
+}
+
+.footerInfo {
+    background-color: #035E7B;
+    padding: 20px 0;
+}
+
+.footer h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-family: 'Linden Hill', serif;
+    color: white;
+
+}
+
+
+.footer .socialIcons {
+    margin-bottom: 20px;
+}
+
+
+.footer .socialIcons a {
+    margin: 0 20px;
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    
+    
+}
+
+.footer .socialIcons a:hover {
+    color: #44CECC;
+    cursor: pointer;
+
+}
+
+.footer .copyright {
+    font-size: 0.8em;
+    color: white;
+}
+
+/* Media Queries CSS */
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        padding: 0 20px;
+    }
+
+    .hero .content {
+        max-width: 40%;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+        line-height: 98%;
+    }
+
+    .hero h2 {
+        font-size: 1.2em;
+    }
+
+    .hero p {
+        font-size: .9em;
+        line-height: 125%;
+
+    }
+
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #workGrid {
+        grid-template-rows: 500px 500px 500px 500px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "wheelwise"
+        "weather"
+        "beasties"
+        "travel";
+    }
+
+    .navigation {
+      display: none;
+    }  
+    
+    .container {
+        display: block;
+      }
+
+
+     .flexContainer {
+        flex-direction: column; /* Stack items vertically */
+        align-items: stretch; /* Stretch items to fill container */
+        }
+    
+        .flexItem {
+            margin: 10px 0; /* Vertical margin for stacked items */
+        }
+    }
