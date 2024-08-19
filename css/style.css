@@ -210,6 +210,9 @@ nav ul li a:hover {
     cursor: pointer;
     display: grid;
     align-content: end;
+    opacity: 0; /* Initial state: invisible */
+    transform: translateY(20px); /* Initial state: slightly moved down */
+    transition: opacity 1s ease, transform 1s ease;
   }
 
   .heading {
@@ -349,3 +352,5 @@ nav ul li a:hover {
             margin: 10px 0; /* Vertical margin for stacked items */
         }
     }
+
+    
