@@ -384,3 +384,18 @@ nav ul li a:hover {
       }
       
     
+      .workGridLink {
+        display: block;
+        height: 100%;
+        width: 100%;
+        text-decoration: none; 
+    }
+
+    /* Ensure the link does not affect the inner content styles */
+    .workGridLink .workGridArea {
+         display: flex;
+         flex-direction: column;
+         justify-content: end;
+         height: 100%;
+         width: 100%;
+    }
